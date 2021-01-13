@@ -1,24 +1,24 @@
-# README
+# LA Covid Bubbles
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby version
 
-Things you may want to cover:
+```
+3.0.0
+```
 
-* Ruby version
+## Running locally
 
-* System dependencies
+The app is configured with PostgreSQL. To install on mac if you don't have it:
 
-* Configuration
+```
+brew install postgresql
+```
 
-* Database creation
+Everything else is standard Rails :steam_locomotive:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+bin/rails db:setup
+bin/rails db:migrate
+bin/rails t
+bin/rails s
+```
