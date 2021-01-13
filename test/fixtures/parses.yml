@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+geocoded:
+  type: NonResParse
+  complete: true
+
+downloaded:
+  type: NonResParse
+  complete: false
+
+newbie:
+  type: NonResParse
+  complete: false

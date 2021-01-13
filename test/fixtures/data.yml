@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parse: geocoded
+  obs: 1
+  name: 3M
+  address: 2724 Peck Rd, Monrovia, CA, 91016
+  total_staff: 18
+  total_non_staff: 0
+
+two:
+  parse: geocoded
+  obs: 2
+  name: 99 Cents Only Stores Warehouse and Corporate Office
+  address: 4000 Union Pacific Ave, Commerce, CA, 90023
+  total_staff: 113
+  total_non_staff: 0
+
+three:
+  parse: downloaded
+  obs: 3
+  name: 365 Delivery, Inc.
+  address: 21822 Lassen St, Chatsworth, CA, 91311
+  total_staff: 3
+  total_non_staff: 0
+
+four:
+  parse: downloaded
+  obs: 4
+  name: AA Meat, Inc.
+  address: 6544 Flotilla St, Commerce, CA, 90040
+  total_staff: 7
+  total_non_staff: 0

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>establishment</type>
+  <type>point_of_interest</type>
+  <type>shopping_mall</type>
+  <formatted_address>100 W Broadway Suite 100, Glendale, CA 91210, USA</formatted_address>
+  <address_component>
+   <long_name>Suite 100</long_name>
+   <short_name>Suite 100</short_name>
+   <type>subpremise</type>
+  </address_component>
+  <address_component>
+   <long_name>100</long_name>
+   <short_name>100</short_name>
+   <type>street_number</type>
+  </address_component>
+  <address_component>
+   <long_name>West Broadway</long_name>
+   <short_name>W Broadway</short_name>
+   <type>route</type>
+  </address_component>
+  <address_component>
+   <long_name>Downtown</long_name>
+   <short_name>Downtown</short_name>
+   <type>neighborhood</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Glendale</long_name>
+   <short_name>Glendale</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Los Angeles County</long_name>
+   <short_name>Los Angeles County</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>California</long_name>
+   <short_name>CA</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>United States</long_name>
+   <short_name>US</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>91210</long_name>
+   <short_name>91210</short_name>
+   <type>postal_code</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>34.1462627</lat>
+    <lng>-118.2567687</lng>
+   </location>
+   <location_type>ROOFTOP</location_type>
+   <viewport>
+    <southwest>
+     <lat>34.1449137</lat>
+     <lng>-118.2581177</lng>
+    </southwest>
+    <northeast>
+     <lat>34.1476117</lat>
+     <lng>-118.2554197</lng>
+    </northeast>
+   </viewport>
+  </geometry>
+  <place_id>ChIJldB7Af_AwoAR9JS8bg2d5EY</place_id>
+  <plus_code>
+   <global_code>85634PWV+G7</global_code>
+   <compound_code>4PWV+G7 Glendale, CA, USA</compound_code>
+  </plus_code>
+ </result>
+</GeocodeResponse>
