@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lacovidbubbles</title>
+    <title>LA Covid Bubbles</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=<%= ENV.fetch("GOOGLE_API_KEY_JS") %>&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
+    <script>
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 34.05, lng: -118.25 },
+          zoom: 11,
+        });
+
+        fetch('/parses/latest.json')
+          .then(response => response.json())
+          .then(data => {
+            for (const datum of data.data) {
+              const cityCircle = new google.maps.Circle({
+                strokeColor: "#EF271B",
+                strokeOpacity: 0.85,
+                strokeWeight: 2,
+                fillColor: "#EF271B",
+                fillOpacity: 0.75,
+                map,
+                center: {
+                  lat: parseFloat(datum.position.latitude),
+                  lng: parseFloat(datum.position.longitude),
+                },
+                radius: Math.sqrt(datum.total_staff) * 100,
+              });
+            }
+          });
+      }
+    </script>
   </head>
 
   <body>

@@ -4,6 +4,8 @@ class Parse < ApplicationRecord
 
   has_many :data
 
+  scope :complete, -> { where(complete: true) }
+
   def parse_doc!
     return if data.any?
 
