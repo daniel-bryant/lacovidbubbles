@@ -1,5 +1,9 @@
 # LA Covid Bubbles
 
+Inspired by this tweet from [skarlamangla](https://twitter.com/skarlamangla/status/1348783210855944192)
+
+Data pulled from [lacounty.gov](http://publichealth.lacounty.gov/media/coronavirus/locations.htm)
+
 ## Ruby version
 
 ```
