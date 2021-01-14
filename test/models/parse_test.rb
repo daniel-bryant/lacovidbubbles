@@ -27,4 +27,10 @@ class ParseTest < ActiveSupport::TestCase
       @parse.complete!
     end
   end
+
+  test "cached_as_json" do
+    @parse = parses(:geocoded)
+    assert_equal @parse.as_json(include: { data: { include: [:position] } }),
+      @parse.cached_as_json
+  end
 end
