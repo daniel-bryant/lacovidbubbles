@@ -11,6 +11,19 @@
     <%= javascript_pack_tag 'bubble_map', 'data-turbolinks-track': 'reload' %>
 
     <%= google_api_maps_tags %>
+
+    <% if Rails.env.production? %>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6V30Z6GNK4"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('set', { cookie_domain: 'lacovidbubbles.herokuapp.com' });
+        gtag('set', { cookie_flags: 'SameSite=None;Secure' });
+        gtag('config', 'G-6V30Z6GNK4');
+      </script>
+    <% end %>
   </head>
 
   <body>
