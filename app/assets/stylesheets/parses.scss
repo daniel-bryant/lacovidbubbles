@@ -2,13 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-#map {
-  height: 100%;
-}
-
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  height: 100%;
+}
+
+#source {
+  text-align: center;
 }
