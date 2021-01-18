@@ -11,3 +11,7 @@ downloaded:
 newbie:
   type: NonResParse
   complete: false
+
+education:
+  type: EduParse
+  complete: false

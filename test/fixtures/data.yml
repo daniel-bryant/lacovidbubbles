@@ -31,3 +31,19 @@ four:
   address: 6544 Flotilla St, Commerce, CA, 90040
   total_staff: 7
   total_non_staff: 0
+
+five:
+  parse: education
+  obs: 1
+  name: Amir Family Child Care
+  address: 5218 Sylmar Ave, Sherman Oaks, CA, 91401
+  total_staff: 3
+  total_non_staff: 6
+
+six:
+  parse: education
+  obs: 2
+  name: Antelope Valley College, CTE Cohort
+  address: 3041 W Avenue K, Lancaster, CA, 93536
+  total_staff: 2
+  total_non_staff: 3
