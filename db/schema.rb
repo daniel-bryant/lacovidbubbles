@@ -10,10 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_12_232531) do
+ActiveRecord::Schema.define(version: 2021_01_19_001320) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+  enable_extension "postgis"
 
   create_table "data", force: :cascade do |t|
     t.bigint "parse_id", null: false
@@ -24,6 +25,7 @@ ActiveRecord::Schema.define(version: 2021_01_12_232531) do
     t.integer "total_non_staff", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
     t.index ["parse_id"], name: "index_data_on_parse_id"
   end
 
