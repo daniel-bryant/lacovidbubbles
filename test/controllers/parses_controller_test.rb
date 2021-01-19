@@ -10,7 +10,7 @@ class ParsesControllerTest < ActionDispatch::IntegrationTest
   test "latest parse url" do
     get parses_latest_url, as: :json
     assert_response :success
-    assert_equal parses(:geocoded).as_json(include: { data: { include: [:position] } }),
+    assert_equal parses(:geocoded).as_json(include: [:data]),
       response.parsed_body
   end
 end

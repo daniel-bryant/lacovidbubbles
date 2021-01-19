@@ -2,7 +2,7 @@ class Parse < ApplicationRecord
   DOC_URL = "http://publichealth.lacounty.gov/media/coronavirus/locations.htm"
   DATUM_KEYS = [:obs, :name, :address, :total_staff, :total_non_staff]
 
-  has_many :data, -> { includes :position }
+  has_many :data
 
   scope :complete, -> { where(complete: true) }
 
@@ -30,7 +30,7 @@ class Parse < ApplicationRecord
 
   def cached_as_json
     Rails.cache.fetch("#{cache_key_with_version}/cached_as_json") do
-      as_json(include: { data: { include: [:position] } })
+      as_json(include: [:data])
     end
   end
 end

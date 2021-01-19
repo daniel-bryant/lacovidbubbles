@@ -18,8 +18,8 @@ window.initMap = function () {
           label: datum.total_staff.toString(),
           map: map,
           position: {
-            lat: parseFloat(datum.position.latitude),
-            lng: parseFloat(datum.position.longitude),
+            lat: datum.location.latitude,
+            lng: datum.location.longitude,
           },
           title: datum.name,
         });
