@@ -15,9 +15,15 @@ class ParseTest < ActiveSupport::TestCase
       .to_return(body: file_fixture("geocode_result.xml").read)
 
     @parse = parses(:downloaded)
+    @datum_three = data(:three)
+    @datum_four = data(:four)
 
-    assert_difference -> { Position.count }, 2 do
-      @parse.geocode_data!
+    assert_changes -> { @datum_three.reload.location.to_s },
+      from: "", to: "POINT (-118.2567687 34.1462627)" do
+      assert_changes -> { @datum_four.reload.location.to_s },
+        from: "", to: "POINT (-118.2567687 34.1462627)" do
+        @parse.geocode_data!
+      end
     end
   end
 

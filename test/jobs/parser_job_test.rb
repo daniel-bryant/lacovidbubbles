@@ -13,10 +13,8 @@ class ParserJobTest < ActiveJob::TestCase
       .to_return(body: file_fixture("geocode_result.xml").read)
 
     assert_difference -> { Datum.count }, 538 do
-      assert_difference -> { Position.count }, 538 do
-        assert_changes -> { @parse.complete? }, from: false, to: true do
-          ParserJob.perform_now(@parse)
-        end
+      assert_changes -> { @parse.complete? }, from: false, to: true do
+        ParserJob.perform_now(@parse)
       end
     end
 
@@ -28,8 +26,7 @@ class ParserJobTest < ActiveJob::TestCase
     assert_equal 18, @datum.total_staff
     assert_equal 0, @datum.total_non_staff
 
-    @position = @datum.position
-    assert_equal 34.146263, @position.latitude
-    assert_equal -118.256769, @position.longitude
+    assert_equal 34.1462627, @datum.location.latitude
+    assert_equal -118.2567687, @datum.location.longitude
   end
 end
