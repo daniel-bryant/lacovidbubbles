@@ -1,4 +1,4 @@
-class ParsesController < ApplicationController
+class NonResParsesController < ApplicationController
   def index
   end
 

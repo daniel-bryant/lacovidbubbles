@@ -15,7 +15,7 @@ class Parse < ApplicationRecord
 
   def cached_as_json
     Rails.cache.fetch("#{cache_key_with_version}/cached_as_json") do
-      as_json(include: [:data])
+      as_json(include: [:data, :citations])
     end
   end
 end

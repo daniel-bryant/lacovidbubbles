@@ -16,6 +16,14 @@ education:
   type: EduParse
   complete: false
 
+education_complete:
+  type: EduParse
+  complete: true
+
 citation:
   type: CitationParse
   complete: false
+
+citation_complete:
+  type: CitationParse
+  complete: true

@@ -3,12 +3,16 @@
   <head>
     <title>LA Covid Bubbles</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'bubble_map', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'bulma', 'data-turbolinks-track': 'reload' %>
 
     <%= google_api_maps_tags %>
 
@@ -27,6 +31,45 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="content">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <%= link_to "🦠", root_url, class: "navbar-item", data: { turbolinks: false } %>
+            <span class="navbar-item"><%= setting_humanized(controller_name) %></span>
+            <span class="navbar-burger" data-target="navbarBurger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarBurger" class="navbar-menu">
+            <div class="navbar-end">
+              <%= link_to setting_humanized("non_res_parses"), non_residential_url,
+                class: "navbar-item #{is_active_class("non_res_parses")}",
+                data: { turbolinks: false } %>
+
+              <%= link_to setting_humanized("edu_parses"), educational_url,
+                class: "navbar-item #{is_active_class("edu_parses")}",
+                data: { turbolinks: false } %>
+
+              <%= link_to setting_humanized("citation_parses"), citations_url,
+                class: "navbar-item #{is_active_class("citation_parses")}",
+                data: { turbolinks: false } %>
+
+              <span class="navbar-item">
+                <a class="button" href="https://github.com/daniel-bryant/lacovidbubbles">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Source</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <%= yield %>
+    </div>
   </body>
 </html>
