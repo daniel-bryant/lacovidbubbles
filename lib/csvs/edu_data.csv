@@ -1,0 +1,72 @@
+obs,name,address,total_staff,total_non_staff
+1,Amir Family Child Care,"5218 Sylmar Ave, Sherman Oaks, CA, 91401",3,6
+2,"Antelope Valley College, CTE Cohort","3041 W Avenue K, Lancaster, CA, 93536",2,3
+3,"Antelope Valley College, Nursing","3041 W Avenue K, Lancaster, CA, 93536",2,9
+4,Arcadia High School,"180 Campus Dr, Arcadia, CA, 91007",3,0
+5,Baldwin Park Unified School District Office,"3699 Holly Ave, Baldwin Park, CA, 91706",20,0
+6,Barahona Family Child Care,"1819 W Adams Blvd, Los Angeles, CA, 90018",2,1
+7,"Bell Senior High, LAUSD Grab & Go Distribution Center","4328 Bell Ave, Bell, CA, 90201",9,0
+8,Bellflower II Child Development Center,"14523 Bellflower Blvd, Bellflower, CA, 90706",2,2
+9,Blessed Sacrament School,"6641 W Sunset Blvd, Los Angeles, CA, 90028",3,0
+10,Bright Horizons at The Water Garden,"1620 26th St, Ste 1020 N, Santa Monica, CA, 90404",4,7
+11,"Bruin Plate, UCLA","350 Charles E Young Dr W, Los Angeles, CA, 90024",10,0
+12,"California Polytechnic State University, Pomona - Animal Unit","3801 W Temple Ave, Pomona, CA, 91768",1,3
+13,"Canyon View School, McKinley Schools","180 Via Verde, Suite 200, San Dimas, CA, 91773",4,1
+14,Carrillo Family Child Care,"1227 E 76th St, Los Angeles, CA, 90001",2,2
+15,Child's World School,"6100 Lindley Ave, Encino, CA, 91316",4,4
+16,Cruz Family Childcare,"3741 Military Ave, Los Angeles, CA, 90034",1,2
+17,Curtis School,"15871 Mulholland Dr, Los Angeles, CA, 90049",3,0
+18,Drew Child Development Center,"9200 Maie Ave, Los Angeles, CA, 90002",3,2
+19,Emek Hebrew Academy Day Camp,"15365 Magnolia Blvd, Sherman Oaks, CA, 91403",2,5
+20,Esalante Elementry School,"4443 Live Oak St, Cudahy, CA, 90201",7,0
+21,Fernald Child Care Center,"320 Charles E Young Dr W, Los Angeles, CA, 90024",3,0
+22,"Florence Ave ES, LAUSD","7211 Bell Ave, Los Angeles, CA, 90001",3,0
+23,Fountain Day School,"1128 N Orange Grove Ave, West Hollywood, CA, 90046",1,3
+24,Gladstone High School,"1340 N Enid Ave, Covina, CA, 91722",4,0
+25,Harry Pregerson Child Care Center,"255 E Temple St, Los Angeles, CA, 90012",2,3
+26,"Hart High School, William S. Hart Union High School District","24825 Newhall Ave, Newhall, CA, 91321",7,0
+27,"Hillery T Broadous Elementary, LAUSD","12561 Filmore St, Pacoima, CA, 91331",3,0
+28,Holy Angels School,"360 Campus Dr, Arcadia, CA, 91007",5,3
+29,Holy Martyrs Armenian Preschool,"16617 Parthenia St, North Hills, CA, 91343",6,0
+30,"Huntington Park Senior High, LAUSD","6020 Miles Ave, Huntington Park, CA, 90255",5,0
+31,Jim Gilliam Childcare,"4000 S La Brea Ave, Los Angeles, CA, 90008",4,0
+32,"Kadima Day School, West Hills","7011 Shoup Ave, West Hills, CA, 91307",2,4
+33,"LA City Department of Recreation and Parks, Delano Recreation Center","15100 Erwin St, Van Nuys, CA, 91411",4,3
+34,La Marina Pre-School and Kindergarten,"115 S Sepulveda Blvd, Manhattan Beach, CA, 90266",4,3
+35,LAC + USC Employees Children's Center,"1401 N Mission Rd, Los Angeles, CA, 90033",5,0
+36,LAUSD Procurement Services Support Center,"8525 Rex Rd, Pico Rivera, CA, 90660",43,0
+37,Leona Cox Community School,"18643 Oakmoor St, Santa Clarita, CA, 91351",4,0
+38,Life Pacific University Athletics,"1100 W Covina Blvd, San Dimas, CA, 91773",0,7
+39,Linda Esperanza Marquez High School,"6361 Cottage St, Huntington Park, CA, 90255",5,0
+40,Loyola Marymount University Athletics,"1 LMU Dr, Los Angeles, CA, 90045",2,4
+41,Luskin Conference Center 3,"337 Charles E Young Dr E,, Los Angeles, CA, 90095",22,0
+42,Mail Distribution - UCLA,"555 Westwood Plz, Level B, Los Angeles, CA, 90095",5,0
+43,Maryvale Early Education Center,"2502 Huntington Dr, Duarte, CA, 91010",4,3
+44,Newhall School District Office,"25375 Orchard Village Rd, Valencia, CA, 91355",4,0
+45,Oaks Christian School Westlake Village,"31749 La Tienda Rd, Westlake Village, CA, 91362",0,4
+46,"Off Campus Neighborhood, USC S. Figueroa St","Los Angeles, CA",2,26
+47,Palos Verdes Montessori Academy,"28451 Indian Peak Rd, Palos Verdes Peninsula, CA, 90274",3,1
+48,Pasadena Waldorf School - Poppy Preschool,"536 E Mendocino St, Altadena, CA, 91001",0,4
+49,Proyecto Pastoral Centro de Alegria,"420 N Soto St, Los Angeles, CA, 90033",1,2
+50,"Rendezvous Café, UCLA","330 De Neve Dr, Los Angeles, CA, 90024",13,0
+51,"Rowland Unified School District, Transportation Services Department","1010 Otterbein Ave, Rowland Heights, CA, 91748",4,0
+52,Saugus High School,"21900 Centurion Way, Santa Clarita, CA, 91350",3,0
+53,"South Gate High School, LAUSD","3351 Firestone Blvd, South Gate, CA, 90280",20,0
+54,St. Genevieve School,"13967 Roscoe Blvd, Panorama City, CA, 91402",5,0
+55,Stepping Stones Family Child Care,"5047 W 21st St, Los Angeles, CA, 90016",4,1
+56,The Master's University and Seminary,"21726 Placerita Canyon Rd, Santa Clarita, CA, 91321",8,14
+57,"Tierra Bonita Elementary, Eastside Union School District","44820 27th St E, E, Lancaster, CA, 93535",4,0
+58,Tiny DOTs Early Education Center,"100 S Main St, Los Angeles, CA, 90012",3,0
+59,Tiny Thinkers Preschool,"15737 Parthenia St, North Hills, CA, 91343",4,2
+60,Trinity Classical Academy,"28310 Kelly Johnson Pkwy, Valencia, CA, 91355",5,4
+61,Twinkle Tots,"555 W Redondo Beach Blvd, Suite 100, Gardena, CA, 90248",1,2
+62,UCLA Facilities,"731 Charles E Young Dr S, Los Angeles, CA, 90095",41,0
+63,UEI College Encino,"5445 Balboa Blvd, Encino, CA, 91316",2,32
+64,UEI College Huntington Park,"6055 Pacific Blvd, Huntington Park, CA, 90255",4,0
+65,UEI College West Covina,"339 N Azusa Ave, West Covina, CA, 91791",0,3
+66,USC Department of Public Safety 2,"3667 Mcclintock Ave, Los Angeles, CA, 90089",3,0
+67,USC Facilities Management Services 2,"1441 Eastlake Ave, Los Angeles, CA, 90089",3,0
+68,Van Nuys Early Education Center,"14350 Sylvan St, Van Nuys, CA, 91401",5,2
+69,Wagon Wheel School,"653 N Cahuenga Blvd, Los Angeles, CA, 90004",2,3
+70,"Wescove Elementary School, West Covina","1010 W Vine Ave, West Covina, CA, 91790",4,1
+71,"Woodrow Wilson Senior High, LAUSD","4500 Multnomah St, Los Angeles, CA, 90032",6,0

@@ -15,3 +15,7 @@ newbie:
 education:
   type: EduParse
   complete: false
+
+citation:
+  type: CitationParse
+  complete: false

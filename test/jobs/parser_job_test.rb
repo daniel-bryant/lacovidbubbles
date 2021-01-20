@@ -6,13 +6,10 @@ class ParserJobTest < ActiveJob::TestCase
   end
 
   test "perform" do
-    stub_request(:any, "http://publichealth.lacounty.gov/media/coronavirus/locations.htm")
-      .to_return(body: file_fixture("media_coronavirus_locations.htm").read)
-
     stub_request(:any, /https:\/\/maps\.googleapis\.com\/maps\/api\/geocode\/xml/)
       .to_return(body: file_fixture("geocode_result.xml").read)
 
-    assert_difference -> { Datum.count }, 538 do
+    assert_difference -> { Datum.count }, 541 do
       assert_changes -> { @parse.complete? }, from: false, to: true do
         ParserJob.perform_now(@parse)
       end

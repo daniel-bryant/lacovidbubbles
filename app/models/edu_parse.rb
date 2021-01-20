@@ -1,7 +1,17 @@
 class EduParse < Parse
-  TR_PATH = "div#educational-settings + div.container-xl tbody tr"
+  CSV_NAME = "edu_data.csv"
 
-  def tr_path
-    TR_PATH
+  def parse_doc!
+    return if data.any?
+
+    CSV.foreach(csv_path, headers: true) do |row|
+      data.create!(row.to_h)
+    end
+  end
+
+  private
+
+  def csv_path
+    Rails.root.join("lib", "csvs", CSV_NAME)
   end
 end

@@ -1,11 +1,11 @@
-class NonResParse < Parse
-  CSV_NAME = "non_res_data.csv"
+class CitationParse < Parse
+  CSV_NAME = "citations.csv"
 
   def parse_doc!
-    return if data.any?
+    return if citations.any?
 
     CSV.foreach(csv_path, headers: true) do |row|
-      data.create!(row.to_h)
+      citations.create!(row.to_h)
     end
   end
 

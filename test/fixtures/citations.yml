@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parse: citation
+  activity_date: 01/10/2021
+  name: MALIBU COUNTRY MART
+  address: 3835 CROSS CREEK RD
+  city: MALIBU
+  description: SHOPPING MALLS
+  location:
+
+two:
+  parse: citation
+  activity_date: 01/10/2021
+  name: CRONIES SPORTS GRILL
+  address: 5687 KANAN RD
+  city: AGOURA HILLS
+  description: RESTAURANT (61-150) SEATS HIGH RISK
+  location:

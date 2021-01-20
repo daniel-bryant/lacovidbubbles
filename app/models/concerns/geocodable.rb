@@ -14,8 +14,8 @@ module Geocodable
       return
     end
 
-    lat = doc.xpath(LATITUDE_XPATH).text
-    lon = doc.xpath(LONGITUDE_XPATH).text
+    lat = doc.at_xpath(LATITUDE_XPATH).text
+    lon = doc.at_xpath(LONGITUDE_XPATH).text
     update!(location: "POINT(#{lon} #{lat})")
   end
 

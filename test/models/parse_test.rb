@@ -8,13 +8,11 @@ class ParseTest < ActiveSupport::TestCase
     end
   end
 
-  # test parse_doc! in child models
-
   test "geocode_data!" do
     stub_request(:any, /https:\/\/maps\.googleapis\.com\/maps\/api\/geocode\/xml/)
       .to_return(body: file_fixture("geocode_result.xml").read)
 
-    @parse = parses(:downloaded)
+    @dl_parse = parses(:downloaded)
     @datum_three = data(:three)
     @datum_four = data(:four)
 
@@ -22,7 +20,19 @@ class ParseTest < ActiveSupport::TestCase
       from: "", to: "POINT (-118.2567687 34.1462627)" do
       assert_changes -> { @datum_four.reload.location.to_s },
         from: "", to: "POINT (-118.2567687 34.1462627)" do
-        @parse.geocode_data!
+        @dl_parse.geocode_data!
+      end
+    end
+
+    @ci_parse = parses(:citation)
+    @citation_one = citations(:one)
+    @citation_two = citations(:two)
+
+    assert_changes -> { @citation_one.reload.location.to_s },
+      from: "", to: "POINT (-118.2567687 34.1462627)" do
+      assert_changes -> { @citation_two.reload.location.to_s },
+        from: "", to: "POINT (-118.2567687 34.1462627)" do
+        @ci_parse.geocode_data!
       end
     end
   end

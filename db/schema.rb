@@ -10,11 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_19_193439) do
+ActiveRecord::Schema.define(version: 2021_01_19_194502) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
+
+  create_table "citations", force: :cascade do |t|
+    t.bigint "parse_id", null: false
+    t.string "activity_date", null: false
+    t.string "name", null: false
+    t.string "address", null: false
+    t.string "city", null: false
+    t.string "description", null: false
+    t.geography "location", limit: {:srid=>4326, :type=>"st_point", :geographic=>true}
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["parse_id"], name: "index_citations_on_parse_id"
+  end
 
   create_table "data", force: :cascade do |t|
     t.bigint "parse_id", null: false
@@ -37,5 +50,6 @@ ActiveRecord::Schema.define(version: 2021_01_19_193439) do
     t.index ["type", "complete"], name: "index_parses_on_type_and_complete"
   end
 
+  add_foreign_key "citations", "parses"
   add_foreign_key "data", "parses"
 end

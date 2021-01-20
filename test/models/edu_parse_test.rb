@@ -9,12 +9,9 @@ class EduParseTest < ActiveSupport::TestCase
   end
 
   test "parse_doc!" do
-    stub_request(:any, "http://publichealth.lacounty.gov/media/coronavirus/locations.htm")
-      .to_return(body: file_fixture("media_coronavirus_locations.htm").read)
-
     @parse = EduParse.create!
 
-    assert_difference -> { Datum.count }, 69 do
+    assert_difference -> { Datum.count }, 71 do
       @parse.parse_doc!
     end
 
@@ -25,5 +22,9 @@ class EduParseTest < ActiveSupport::TestCase
     assert_equal "5218 Sylmar Ave, Sherman Oaks, CA, 91401", @datum.address
     assert_equal 3, @datum.total_staff
     assert_equal 6, @datum.total_non_staff
+
+    assert_no_difference -> { EduParse.count } do
+      @parse.parse_doc!
+    end
   end
 end
